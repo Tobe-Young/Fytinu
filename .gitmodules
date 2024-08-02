@@ -1,0 +1,9 @@
+[submodule "3rdparty/sdl2"]
+	path = 3rdparty/sdl2
+	url = git@github.com:libsdl-org/SDL.git
+[submodule "3rdparty/angle"]
+	path = 3rdparty/angle
+	url = git@github.com:google/angle.git
+[submodule "3rdparty/sdl"]
+	path = 3rdparty/sdl
+	url = git@github.com:libsdl-org/SDL.git
