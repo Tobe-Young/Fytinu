@@ -1,0 +1,7 @@
+cc_binary(
+    name = "AIX",
+    srcs = [
+        "main.cpp",
+    ],
+    visibility = ["//visibility:public"],
+)

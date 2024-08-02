@@ -1,0 +1,3 @@
+platform settings -w $PWD
+settings set target.source-map ./ $PWD
+target.load-cwd-lldbinit

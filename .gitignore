@@ -1,0 +1,12 @@
+/.clwb/
+/.vscode/
+/.idea/
+/.lldbinit
+bazel-bin
+bazel-Fytinu
+bazel-out
+bazel-testlogs
+cmake-build-debug/
+build/
+/bazel-testlogs/
+/.vscode/
