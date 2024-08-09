@@ -7,8 +7,19 @@ project(Fytinu VERSION 1.0)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# Angle
+set(ANGLE_DIR "3rdparty/angle")
+include_directories(${ANGLE_DIR}/include)
+link_directories(${ANGLE_DIR}/out/Release)
+
+# SDL
+add_subdirectory(3rdparty/sdl)
+
 # 添加要编译的可执行文件
 add_executable(${PROJECT_NAME} src/main.cpp)
 
 # 如果有需要链接的库，在这里指定
-# target_link_libraries(YourExecutableName SomeLibrary)
+target_link_libraries(${PROJECT_NAME} PRIVATE
+        SDL3-shared
+        EGL
+        GLESv2)
